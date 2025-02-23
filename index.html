@@ -26,16 +26,24 @@
 <!-- Add your site or application content here -->
 
 <header>
-    <button>Open navigation</button>
+    <div id="nav-icon-button" onclick="toggleNavigation()">
+        <div class="open" id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 </header>
 
-<nav id="navigation">
-    <ul>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
+<nav class="open" id="navigation">
+    <div>
+        <ul>
+            <li><a href="#profile" onclick="toggleNavigation()">Profile</a></li>
+            <li><a href="#projects" onclick="toggleNavigation()">Projects</a></li>
+            <li><a href="#resume" onclick="toggleNavigation()">Resume</a></li>
+            <li><a href="#contacts" onclick="toggleNavigation()">Contacts</a></li>
+        </ul>
+    </div>
 </nav>
 
 <main>
