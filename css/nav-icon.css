@@ -1,6 +1,8 @@
 #navigation {
     position: fixed;
 
+    z-index: 99;
+
     right: 0;
     top: 0;
 
@@ -42,7 +44,7 @@
 #navigation li a {
     font-family: "Abril Fatface", cursive;
     font-size: 20px;
-    color: #4E5EAC;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -52,7 +54,8 @@
 }
 
 #nav-icon-button {
-    z-index: 4;
+    z-index: 100;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
 
     position: fixed;
     top: 8px;

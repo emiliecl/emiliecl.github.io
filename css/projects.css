@@ -1,0 +1,38 @@
+#projects article {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+}
+
+#projects article > div {
+
+    margin-left: 8px;
+    margin-right: 8px;
+
+    overflow: hidden;
+
+    padding: 16px;
+    background: #ffffffdd;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+
+    border-top-left-radius: calc(50vw - 16px);
+    border-top-right-radius: calc(50vw - 16px);
+}
+
+#tune-up {
+    background: url("../res/tune-up.png");
+    background-size: cover;
+}
+
+#tune-up .cover {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+}
