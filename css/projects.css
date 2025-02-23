@@ -1,6 +1,53 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#projects #project-indicator {
+    position: absolute;
+    z-index: 4;
+    top: 90px;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 90vw;
+    height: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+#projects #project-indicator div {
+    background: #888888;
+    height: 100%;
+    opacity: 0.2;
+    border-radius: 8px;
+}
+
+#projects #project-indicator div.active {
+    background: var(--main-color);
+    opacity: 0.8;
+}
+
+
+#projects > div {
+    display: flex;
+    flex: 1 1 auto;
+    overflow: auto;
+
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
 #projects article {
-    width: 100vw;
-    height: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    min-width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    overflow: auto;
 
     position: relative;
     border-top-left-radius: 28px;

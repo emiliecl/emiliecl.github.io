@@ -10,11 +10,15 @@ html, body {
     margin: 0;
     padding: 0;
     max-width: 100vw;
+
+    scroll-snap-type: y mandatory;
 }
 
 section {
     width: 100vw;
     height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 h1, h2, h3, h4, h5, h6 {
