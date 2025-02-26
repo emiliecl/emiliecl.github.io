@@ -70,6 +70,19 @@ function toggleSeeMore(icon, projectId) {
     }, 200)
 }
 
+function setWelcome() {
+    const greetings = ["Hi", "Hola", "Salut", "Hallo", "Ciao", "Hoi", "Hej", "Merhaba", "Cześć"];
+
+    let index = 0
+    const welcome = document.getElementById('welcome');
+    if (welcome) {
+        setInterval(() => {
+            welcome.innerText = greetings[index]
+            index = (index + 1) % greetings.length
+        }, 2000)
+    }
+}
+
 window.onload = () => {
     const projectsSection = document.getElementById('projects');
     const sections = projectsSection.getElementsByTagName('article').length;
@@ -97,4 +110,5 @@ window.onload = () => {
     })
 
     setParallaxEffect()
+    setWelcome()
 }

@@ -2,6 +2,7 @@
 @import "projects.css";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Indie+Flower&display=swap');
 
 :root {
     --main-color: #772D30
@@ -112,10 +113,28 @@ main.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#home-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #home-section h1 {
     font-size: 4em;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+}
+
+#home-section svg {
+    stroke: var(--main-color);
+}
+
+#home-section p {
+    font-family: 'Indie Flower', cursive;
+    color: var(--main-color);
 }
 
 #profile {
@@ -125,7 +144,7 @@ main.active {
     align-items: center;
     justify-content: end;
     overflow-x: hidden;
-    
+
 }
 
 #profile .name {
@@ -158,3 +177,17 @@ strong {
 .text-profil2 {
     text-align: center;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(100px);
+    }
+}
+
+svg #wheel {
+    animation: scroll ease 1.5s infinite;
+}
+
