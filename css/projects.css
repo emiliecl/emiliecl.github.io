@@ -81,5 +81,49 @@
 
 #tune-up .cover {
     width: 40%;
+}
+
+.left{
+    text-align: left;
+}
+
+.justified-text {
+    text-align: justify; /* Justifies the text */
+    line-height: 1.6; /* Adds space between lines for better readability */
+    hyphens: auto; /* Automatically adds hyphens for long words at line breaks */
+}
+
+#urban-selter {
+    background: url("../res/urban-selter.png");
+    background-size: cover;
+}
+
+#urban-selter .cover {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+}
+
+#hapmap {
+    background: url("../res/hapmap.png");
+    background-size: cover;
+}
+
+#wombox {
+    background: url("../res/wombox.png");
+    background-size: cover;
+}
+
+#wombox .cover {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+}
+
+#poster {
+    background: url("../res/poster.png");
+    background-size: cover;
+}
+
+#poster .cover {
+    width: 40%;
     aspect-ratio: 1 / 1;
 }

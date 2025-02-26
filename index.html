@@ -40,7 +40,7 @@
         <ul>
             <li><a href="#profile" onclick="toggleNavigation()">Profile</a></li>
             <li><a href="#projects" onclick="toggleNavigation()">Projects</a></li>
-            <li><a href="#resume" onclick="toggleNavigation()">Resume</a></li>
+            <li><a href="#resume" onclick="toggleNavigation()">CV</a></li>
             <li><a href="#contacts" onclick="toggleNavigation()">Contacts</a></li>
         </ul>
     </div>
@@ -48,21 +48,36 @@
 
 <main>
     <section>
-        <h1>Hi</h1>
+        <div class="background-container">
+            <div class="content">
+                <h1>hi</h1>
+            </div>
+        </div>
     </section>
     <section id="profile">
-        <h1>Emilie Clément</h1>
-        <div>
-            <img alt="Photo of me" src="#"/>
-            <p>
-                I recently completed my Master’s in Design and am actively seeking a PhD in data visualization,
-                accessibility, and decision-making. Passionate about emerging technologies and sustainability, I ask:
-                why not combine both to make complex information more accessible and drive more responsible
-                decision-making?
-            </p>
+        <div class="cropped-background-container">
+            <div class="content">
+                <h1>Emilie Clément</h1>
+            </div>
+            <img alt="Photo of me" src="res/Photo_me.jpg" class="face-photo">
+            <div class="text-profil">
+                <p>
+                    I recently completed my Master’s in Design and am actively seeking a <strong>PhD in data visualization,
+                    accessibility, and decision-making.</strong> Passionate about <strong> technologies and sustainability</strong>, I ask:
+                    why not combine both to make complex information more accessible and drive more responsible
+                    decision-making?
+                </p>
+            </div>
+
+            <div class="text-profil2">
+                <p>
+                    Explore more details about my <br>
+                    experience in my <strong><a href="#resume" onclick="toggleNavigation()">CV</a></strong> or discover the <br>
+                    projects I’ve worked on below!
+                </p>
+            </div>
         </div>
 
-        <p>Explore more details about my experience in my CV or discover the projects I’ve worked on below!</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -75,20 +90,20 @@
                 <div>
                     <i class="chevron-up"></i>
                     <img alt="Tune up project logo" class="cover" src="./res/tune-up-logo.png"/>
-                    <p>Project Description:</p>
-                    <p>
-                        TuneUp is a mobile app designed to be your musical navigator, combining GPS and personalized
-                        playlists based on your destination. It tailors the soundtrack to your journey, recommending
-                        exciting spots and hidden gems along the way.
+                    <p class="left" ><strong>Project Description:</strong></p>
+                    <p class="justified-text">
+                        TuneUp is a <strong>mobile app</strong> designed to be your <strong>musical navigator</strong>, combining <strong>GPS</strong> and personalized
+                        playlists based on your destination. It <strong>tailors the soundtrack to your journey, recommending
+                        exciting spots and hidden gems</strong> along the way.
                     </p>
                     <div class="more-info">
                         <p>Project Details:</p>
-                        <ul>
+                        <ul class="justified-text">
                             <li>Type: Group project</li>
                             <li>When: First year of Master's</li>
-                            <li>Focus: UI Design</li>
+                            <li>Focus: <strong>UI Design</strong></li>
                             <li>
-                                Context: This project aimed to interact with everyday objects, like music, in an
+                                Context: <strong>This project aimed to interact with everyday objects</strong>, like music, in an
                                 innovative
                                 way to enhance exploration and personalization.
                             </li>
@@ -96,68 +111,113 @@
                     </div>
                 </div>
             </article>
-            <article id="tune-up">
+            <article id="urban-selter">
                 <div>
                     <i class="chevron-up"></i>
-                    <img alt="Tune up project logo" class="cover" src="./res/tune-up-logo.png"/>
-                    <p>Project Description:</p>
-                    <p>
-                        TuneUp is a mobile app designed to be your musical navigator, combining GPS and personalized
-                        playlists based on your destination. It tailors the soundtrack to your journey, recommending
-                        exciting spots and hidden gems along the way.
+                    <h2>Urban Selter</h2>
+                    <p class="left" ><strong>Project Description:</strong></p>
+                    <p class="justified-text">
+                        This urban shelter is designed to <strong>adapt autonomously to its environment</strong>, much like a <strong>sunflower
+                        tracking the sun and banana leaves guiding airflow</strong>. Equipped with sensors, the shelter follows
+                        the sun’s, optimizing shade throughout the day while also responding to wind dynamics to ensure
+                        efficient ventilation.
                     </p>
                     <div class="more-info">
                         <p>Project Details:</p>
-                        <ul>
+                        <ul class="justified-text">
                             <li>Type: Group project</li>
                             <li>When: First year of Master's</li>
-                            <li>Focus: UI Design</li>
+                            <li>Focus: <strong>Product design</strong> and <strong>biomimicry</strong></li>
                             <li>
-                                Context: This project aimed to interact with everyday objects, like music, in an
-                                innovative
-                                way to enhance exploration and personalization.
+                                Context: The goal was to <strong>design an urban shelter inspired by the nature</strong>, creating a dynamic
+                                and responsive structure that enhances <strong>outdoor comfort.</strong>
                             </li>
                         </ul>
                     </div>
                 </div>
             </article>
-            <article id="tune-up">
+            <article id="hapmap">
                 <div>
                     <i class="chevron-up"></i>
-                    <img alt="Tune up project logo" class="cover" src="./res/tune-up-logo.png"/>
-                    <p>Project Description:</p>
-                    <p>
-                        TuneUp is a mobile app designed to be your musical navigator, combining GPS and personalized
-                        playlists based on your destination. It tailors the soundtrack to your journey, recommending
-                        exciting spots and hidden gems along the way.
+                    <img alt="hapmap logo" class="cover" src="./res/hapmap-logo.png"/>
+                    <p class="left" ><strong>Project Description:</strong></p>
+                    <p class="justified-text" >
+                        HapMap is an innovative <strong>platform</strong> designed to <strong>transform global data into visual stories,
+                        offering insights into the well-being of over 150 countries.</strong> It provides an engaging,
+                        interactive experience where users can <strong>explore and compare happiness indices</strong> across the world.
                     </p>
                     <div class="more-info">
                         <p>Project Details:</p>
-                        <ul>
-                            <li>Type: Group project</li>
-                            <li>When: First year of Master's</li>
-                            <li>Focus: UI Design</li>
+                        <ul class="justified-text">
+                            <li>Type: Group project (with individual UI work)</li>
+                            <li>When: Last year of my Bachelor’s</li>
+                            <li>Focus: <strong>UI/UX design and coding</strong></li>
                             <li>
-                                Context: This project aimed to interact with everyday objects, like music, in an
-                                innovative
-                                way to enhance exploration and personalization.
+                                The project aimed to create an <strong>intuitive way to explore complex data</strong>, offering
+                                users the ability to <strong>interact with a world map, apply filters, and compare</strong>
+                                happiness indices across countries and continents.
                             </li>
                         </ul>
                     </div>
                 </div>
             </article>
-            <article></article>
+            <article id="wombox">
+                <div>
+                    <i class="chevron-up"></i>
+                    <img alt="wombox logo" class="cover" src="./res/wombox-logo.png"/>
+                    <p class="left" ><strong>Project Description:</strong></p>
+                    <p class="justified-text">
+                        WOMBOX is a <strong>fine art transportation company</strong> that stands out for its use of cutting-edge <strong>PCM</strong>
+                        (Phase Change Material) technology to ensure the <strong>safe and precise transport</strong> of unique artworks
+                        by road, air, or sea.
+                    </p>
+                    <div class="more-info">
+                        <p>Project Details:</p>
+                        <ul class="justified-text">
+                            <li>Type: Group project, individual work</li>
+                            <li>When: First year of my Master’s</li>
+                            <li>Focus: <strong>Graphic</strong> and <strong>UI design</strong></li>
+                            <li>
+                                The goal of the project was to <strong>design a product using PCM technology.</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article id="poster">
+                <div>
+                    <i class="chevron-up"></i>
+                    <h2>Poster</h2>
+                    <p class="left" ><strong>Project Description:</strong></p>
+                    <p class="justified-text">
+                        A series of <strong>posters designed using photographs I captured</strong>, transforming them into visually compelling
+                        compositions through graphic design. Each piece explores the interplay of color, composition, and
+                        typography to create a unique aesthetic.
+                    </p>
+                    <div class="more-info">
+                        <p>Project Details:</p>
+                        <ul class="justified-text">
+                            <li>Type: Individual project</li>
+                            <li>Focus: <strong>Graphic design</strong></li>
+                            <li>
+                                Context: To experiment with photography and visual design, crafting posters that
+                                convey mood, narrative, and artistic expression.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
     <section id="resume">
-        <h2>Resume</h2>
+        <h2>CV</h2>
     </section>
     <section id="contacts">
         <h2>Contacts</h2>
     </section>
 </main>
 
-<p>Hello world! This is HTML5 Boilerplate.</p>
+
 <script src="js/app.js"></script>
 
 </body>

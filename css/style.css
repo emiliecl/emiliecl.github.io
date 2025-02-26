@@ -1,9 +1,10 @@
 @import "nav-icon.css";
 @import "projects.css";
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --main-color: #4E5EAC
+    --main-color: #772D30
 }
 
 html, body {
@@ -19,6 +20,16 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+ul{
+    font-family: 'Nunito', sans-serif;
+    color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,4 +49,60 @@ h2 {
     height: 40px;
     background: #bbbbbb;
     border-radius: 50%;
+}
+
+.background-container {
+    background-image: url("../res/background.jpg");
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Optional: Makes the background fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+.cropped-background-container {
+    background-image: url("../res/background.jpg");
+    background-position: 50% -170%; /* Adjust these values to crop the image */
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.face-photo {
+    position: absolute; /* Positions the photo relative to the container */
+    bottom: -760px; /* Distance from the bottom */
+    left: -45px; /* Distance from the right */
+    width: 220px; /* Adjust the size of the photo */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Optional: Makes the photo circular */
+}
+
+.text-profil {
+    position: absolute;
+    left: 180px;
+    bottom: -810px;
+    text-align: right;
+    margin: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: #772D30;
+}
+
+.text-profil2 {
+    position: absolute;
+    text-align: center;
+    bottom: -900px;
 }
