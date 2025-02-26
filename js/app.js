@@ -26,6 +26,63 @@ function setActiveProject(index) {
     }
 }
 
+function setBackgroundImageOffset(offset) {
+    const main = document.getElementById('main');
+    if (main) {
+        main.style.backgroundPositionY = `-${offset}px`
+        main.classList.add('active')
+    }
+}
+
+function setParallaxEffect() {
+    const scrollY = window.scrollY
+
+    const ratio = scrollY / window.innerHeight;
+    const maxOffsetHeight = 350;
+
+    if (scrollY <= window.innerHeight) {
+        const offset = scrollY - ratio * maxOffsetHeight;
+
+        setBackgroundImageOffset(offset)
+    } else {
+        const offset = scrollY - maxOffsetHeight;
+        setBackgroundImageOffset(offset)
+    }
+}
+
+function toggleSeeMore(icon, projectId) {
+    const project = document.getElementById(projectId);
+    if (project) {
+        const [moreInfoDiv] = project.getElementsByClassName('more-info')
+        if (moreInfoDiv) {
+            moreInfoDiv.classList.toggle('active');
+        }
+    }
+
+    setTimeout(() => {
+        if (icon.classList.contains('chevron-down')) {
+            icon.classList.remove('chevron-down')
+            icon.classList.add('chevron-up')
+        } else {
+            icon.classList.remove('chevron-up')
+            icon.classList.add('chevron-down')
+        }
+    }, 200)
+}
+
+function setWelcome() {
+    const greetings = ["Geia", "Hi", "Hola", "Salut", "Hallo", "Ciao", "Hoi", "Hej", "Merhaba", "Cześć"];
+
+    let index = 0
+    const welcome = document.getElementById('welcome');
+    if (welcome) {
+        setInterval(() => {
+            welcome.innerText = greetings[index]
+            index = (index + 1) % greetings.length
+        }, 2000)
+    }
+}
+
 window.onload = () => {
     const projectsSection = document.getElementById('projects');
     const sections = projectsSection.getElementsByTagName('article').length;
@@ -41,10 +98,17 @@ window.onload = () => {
     setActiveProject(0)
 
     const articleContainer = document.getElementById('article-container');
-    articleContainer.addEventListener('scroll', (event) => {
+    articleContainer.addEventListener('scroll', (_event) => {
         const ratio = articleContainer.scrollLeft / articleContainer.scrollWidth
         const activeSectionIndex = Math.round(ratio * sections)
 
         setActiveProject(activeSectionIndex);
     })
+
+    window.addEventListener('scroll', (_event) => {
+        setParallaxEffect()
+    })
+
+    setParallaxEffect()
+    setWelcome()
 }
