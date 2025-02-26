@@ -98,14 +98,14 @@ window.onload = () => {
     setActiveProject(0)
 
     const articleContainer = document.getElementById('article-container');
-    articleContainer.addEventListener('scroll', (event) => {
+    articleContainer.addEventListener('scroll', (_event) => {
         const ratio = articleContainer.scrollLeft / articleContainer.scrollWidth
         const activeSectionIndex = Math.round(ratio * sections)
 
         setActiveProject(activeSectionIndex);
     })
 
-    window.addEventListener('scroll', (event) => {
+    window.addEventListener('scroll', (_event) => {
         setParallaxEffect()
     })
 
