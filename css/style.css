@@ -106,3 +106,28 @@ strong {
     text-align: center;
     bottom: -900px;
 }
+
+.container2{
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.description {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify; /* Justifies the text */
+    hyphens: auto;
+    margin: 30px;
+}
+
+a {
+    color: #772D30; /* Changes link color to orange */
+    text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+    color: #772D30; /* Changes link color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
