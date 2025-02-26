@@ -216,3 +216,55 @@ svg #wheel {
     animation: scroll ease 1.5s infinite;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 10px;
+}
+
+.three-columns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.colum{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#resume3{
+    height: 30vh;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+}
+
+.mail-logo{
+    width: 24px;
+    height: auto;
+}
+
+.mail-link{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+

@@ -40,7 +40,7 @@
         <ul>
             <li><a href="#profile" onclick="toggleNavigation()">Profile</a></li>
             <li><a href="#projects" onclick="toggleNavigation()">Projects</a></li>
-            <li><a href="#resume" onclick="toggleNavigation()">CV</a></li>
+            <li><a href="#resume1" onclick="toggleNavigation()">CV</a></li>
             <li><a href="#contacts" onclick="toggleNavigation()">Contacts</a></li>
         </ul>
     </div>
@@ -69,7 +69,7 @@
         </div>
 
         <div class="profile-description">
-            <img alt="Photo of me" class="face-photo" src="res/Photo_me.jpg">
+            <img alt="Photo of me" class="face-photo" src="res/Photo_me.png">
             <p>
                 I recently completed my Master’s in Design and am actively seeking a <strong>PhD in data visualization,
                 accessibility, and decision-making.</strong> Passionate about <strong> technologies and
@@ -82,7 +82,7 @@
         <div class="profile-more">
             <p>
                 Explore more details about my
-                experience in my <strong><a href="#resume">CV</a></strong> or discover the
+                experience in my <strong><a href="#resume1">CV</a></strong> or discover the
                 projects I’ve worked on below!
             </p>
         </div>
@@ -154,7 +154,7 @@
             <article id="hapmap">
                 <div>
                     <i class="chevron-up" onclick="toggleSeeMore(this, 'hapmap')"></i>
-                    <img alt="hapmap logo" class="cover" src="./res/hapmap-logo.png"/>
+                    <img alt="hapmap logo" class="cover" src="./res/hapmap-logo.svg"/>
                     <p class="left"><strong>Project Description:</strong></p>
                     <p class="justified-text">
                         HapMap is an innovative <strong>platform</strong> designed to <strong>transform global data into
@@ -183,7 +183,7 @@
             <article id="wombox">
                 <div>
                     <i class="chevron-up" onclick="toggleSeeMore(this, 'wombox')"></i>
-                    <img alt="wombox logo" class="cover" src="./res/wombox-logo.png"/>
+                    <img alt="wombox logo" class="cover" src="./res/wombox-logo.svg"/>
                     <p class="left"><strong>Project Description:</strong></p>
                     <p class="justified-text">
                         WOMBOX is a <strong>fine art transportation company</strong> that stands out for its use of
@@ -233,7 +233,7 @@
             </article>
         </div>
     </section>
-    <section id="resume">
+    <section id="resume1">
         <h2>CV</h2>
             <div class="container2">
                     <h3>Experience</h3>
@@ -255,15 +255,15 @@
                             <br><a href="https://www.ece.tuc.gr/en/home">ECE</a>, <a href="https://www.tuc.gr/en/home"> Technical University of Crete</a>, Greece.
                         </p>
 
-                        <br>
-                        <br>
                        <h3>Publications</h3>
                         <p class="description">
                             <strong>Poster 2025</strong>
                             <br>Emilie Clément, Raphaëlle C. Bats, Yvonne Jansen, Mathilde Garnier. <a href="https://inria.hal.science/hal-04910140/document"> From Data to Data Games: Exploring Public Engagement with Scientific Information through Serious Game Design Workshops.</a> <a href="https://tei.acm.org/2025/">TEI 2025</a>, France.
                         </p>
-
-                        <br>
+            </div>
+    </section>
+    <section id="resume2">
+        <div class="container2">
                         <br>
                         <h3>Education</h3>
                         <p class="description">
@@ -279,8 +279,6 @@
                             <br><a href="http://cales-prod.univ-montp3.fr/fr/index/offre-de-formation/licence-lmd-XA/sciences-humaines-et-sociales-SHS/licence-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-HP40MSV1/parcours-miashs-LB51GZIF.html">Université Paul Valéry Montpellier iii</a>, France.
                         </p>
 
-                         <br>
-                         <br>
                          <h3>Volunteering</h3>
                          <p class="description">
                             <strong>August 2023</strong>
@@ -289,15 +287,78 @@
                          </p>
 
 
+                         <div class="three-columns">
+                             <div class="column">
+                                 <h3>Tools</h3>
+                                 <ul>
+                                     <li>Adobe Suite</li>
+                                     <li>Figma</li>
+                                     <li>Blender</li>
+                                     <li>LaTex</li>
+                                     <li>Suite Office</li>
+                                     <li>Miro</li>
+                                 </ul>
+                             </div>
 
+                             <div class="column">
+                                 <h3>Coding</h3>
+                                 <ul>
+                                     <li>HTML / CSS</li>
+                                     <li>JavaScript</li>
+                                     <li>PHP</li>
+                                     <li>Python</li>
+                                     <li>SQL</li>
+                                     <li>R Studio</li>
+                                 </ul>
+                             </div>
 
-
-
-                 </div>
+                             <div class="column">
+                                 <h3>Languages</h3>
+                                 <ul>
+                                     <li>English</li>
+                                     <li>French</li>
+                                 </ul>
+                             </div>
+                         </div>
             </div>
     </section>
+    <section id="resume3">
+        <div class="container2">
+            <div class="three-columns">
+                <div class="column">
+                    <h3>Sports</h3>
+                    <ul>
+                        <li>Yoga</li>
+                        <li>Surfing</li>
+                        <li>Bouldering</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h3>Arts</h3>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Drawing</li>
+                        <li>Pottery</li>
+                        <li>Knitting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contacts">
         <h2>Contacts</h2>
+        <div class="contact">
+            <h1>Let's stay in contact</h1>
+        </div>
+        <div class="center">
+            <div class="mail">
+                <img src="res/mail-logo.svg" alt="Gmail logo" class="mail-logo">
+                <a href="mailto:emilie.cl123@gmail.com" class="mail-link" >emilie.cl123@gmail.com</a>
+            </div>
+        </div>
+
     </section>
 </main>
 
