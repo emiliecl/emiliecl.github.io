@@ -2,6 +2,16 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    
+    overflow-x: hidden;
+}
+
+#projects p {
+    margin: 0;
+}
+
+#projects h2 {
+    margin: 16px;
 }
 
 #projects #project-indicator {
@@ -28,6 +38,17 @@
 #projects #project-indicator div.active {
     background: var(--main-color);
     opacity: 0.8;
+}
+
+#projects .more-info {
+    max-height: 0;
+    transition: max-height 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+#projects .more-info.active {
+    max-height: 100vh;
+    transition: max-height 0.25s ease-in-out;
 }
 
 
@@ -61,7 +82,7 @@
 
     overflow: hidden;
 
-    padding: 16px;
+    padding: 8px 48px;
     background: #ffffffdd;
     position: absolute;
     bottom: 0;
@@ -83,8 +104,8 @@
     width: 40%;
 }
 
-.left{
-    text-align: left;
+.left {
+    align-self: start;
 }
 
 .justified-text {

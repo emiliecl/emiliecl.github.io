@@ -22,17 +22,21 @@ section {
     scroll-snap-stop: always;
 }
 
-p{
+p {
     font-family: 'Nunito', sans-serif;
     color: black;
 }
 
-ul{
+ul {
     font-family: 'Nunito', sans-serif;
     color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: var(--main-color);
+}
+
+b {
     color: var(--main-color);
 }
 
@@ -47,8 +51,14 @@ h2 {
 .chevron-up {
     width: 40px;
     height: 40px;
-    background: #bbbbbb;
     border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3Echevron-up%3C/title%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' /%3E%3C/svg%3E");
+}
+
+.chevron-down {
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctitle%3Echevron-down%3C/title%3E%3Cpath d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /%3E%3C/svg%3E");
 }
 
 .background-container {
@@ -56,7 +66,7 @@ h2 {
     background-size: cover; /* Ensures the image covers the entire body */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Optional: Makes the background fixed while scrolling */
+    background-attachment: scroll; /* Optional: Makes the background fixed while scrolling */
     margin: 0;
     padding: 0;
     height: 100vh; /* Ensures the body takes up the full viewport height */
@@ -79,30 +89,72 @@ h2 {
     text-align: center;
 }
 
-.face-photo {
-    position: absolute; /* Positions the photo relative to the container */
-    bottom: -760px; /* Distance from the bottom */
-    left: -45px; /* Distance from the right */
-    width: 220px; /* Adjust the size of the photo */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 50%; /* Optional: Makes the photo circular */
+main {
+    background-image: url("../res/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0;
 }
 
-.text-profil {
-    position: absolute;
-    left: 180px;
-    bottom: -810px;
+main.active {
+    background-size: cover;
+}
+
+.face-photo {
+    border-radius: 50%;
+    object-fit: contain;
+    max-width: min(50%, 400px);
+    transform: translateX(-20%);
+}
+
+#home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-section h1 {
+    font-size: 4em;
+}
+
+#profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    overflow-x: hidden;
+    
+}
+
+#profile .name {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-description {
+    display: flex;
+    padding-right: 16px;
+}
+
+.profile-description p {
     text-align: right;
-    margin: 10px;
+}
+
+#profile .profile-more {
+    text-align: center;
+    margin-bottom: 24px;
+    width: min(400px, 60%);
 }
 
 strong {
     font-weight: bold;
-    color: #772D30;
+    color: var(--main-color);
 }
 
 .text-profil2 {
-    position: absolute;
     text-align: center;
-    bottom: -900px;
 }
