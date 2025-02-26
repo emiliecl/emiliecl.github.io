@@ -71,7 +71,7 @@ function toggleSeeMore(icon, projectId) {
 }
 
 function setWelcome() {
-    const greetings = ["Hi", "Hola", "Salut", "Hallo", "Ciao", "Hoi", "Hej", "Merhaba", "Cześć"];
+    const greetings = ["Geia", "Hi", "Hola", "Salut", "Hallo", "Ciao", "Hoi", "Hej", "Merhaba", "Cześć"];
 
     let index = 0
     const welcome = document.getElementById('welcome');
